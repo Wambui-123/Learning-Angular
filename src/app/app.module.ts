@@ -1,16 +1,27 @@
+import { FormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { EventBindingComponent } from './event-binding/event-binding.component';
+import { InterpolationComponentComponent } from './interpolation-component/interpolation-component.component';
+import { PropertyBindingComponent } from './property-binding/property-binding.component';
+import { TwoWayDataBindingComponent } from './two-way-data-binding/two-way-data-binding.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    EventBindingComponent,
+    InterpolationComponentComponent,
+    PropertyBindingComponent,
+    TwoWayDataBindingComponent
+    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
