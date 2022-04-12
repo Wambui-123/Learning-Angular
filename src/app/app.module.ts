@@ -8,6 +8,7 @@ import { EventBindingComponent } from './event-binding/event-binding.component';
 import { InterpolationComponentComponent } from './interpolation-component/interpolation-component.component';
 import { PropertyBindingComponent } from './property-binding/property-binding.component';
 import { TwoWayDataBindingComponent } from './two-way-data-binding/two-way-data-binding.component';
+import { StructuralDirectivesComponent } from './structural-directives/structural-directives.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { TwoWayDataBindingComponent } from './two-way-data-binding/two-way-data-
     EventBindingComponent,
     InterpolationComponentComponent,
     PropertyBindingComponent,
-    TwoWayDataBindingComponent
+    TwoWayDataBindingComponent,
+    StructuralDirectivesComponent
     
   ],
   imports: [

@@ -1,0 +1,18 @@
+<p>Structural-Directives</p>
+<h3>Can you see me? : {{!showElement}}</h3>
+<button class="btn btn-primary" (click)="toogleElement('Hi there')">Toggle</button>
+<div *ngIf="showElement; else otherElement">
+    <h3>I'm the other one</h3>
+</div>
+<ng-template #otherElement>
+<div>
+    <h3>Here I am!!!</h3>
+</div>
+</ng-template>
+<!-- Users -->
+<div *ngFor="let user of users; index as i">
+    <div *ngIf="ifFalse(i);">
+        <div><img src="{{user.avatar_url}}" /></div>
+        <h4>{{user.login}} : No: {{ i }}</h4>
+    </div>
+</div>
